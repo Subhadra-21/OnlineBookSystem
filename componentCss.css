@@ -1,0 +1,196 @@
+.toolsContainer{
+	display : flex;
+}
+
+
+.searchContainer{
+	position: absolute;
+    left: 72%;
+	
+}
+
+.booksContainer{
+	margin-top: 1%;
+	display: flex;
+	flex-wrap : wrap; 
+}
+
+.indBook{	
+	max-width: 30%;
+	min-width: 20%;
+	float: left; 
+    margin: 11px;
+}
+
+.myBook{
+	text-align : center;	
+}
+
+.bookCnt{
+	font-weight: bold;
+    font-size: 20px;
+	
+}
+
+.bookDetails {
+    border: 1px solid grey; 
+    border-radius: 8px;
+}
+
+.bookHeader{ 
+	padding: 10px; 
+	background: rgba(30, 87, 153, 0.78);
+	color: white;
+	font-size: 24px;
+	
+}
+
+.bookBody{
+	padding: 4%;
+    min-height: 130px;
+	
+}
+
+.coverPhoto{
+	float: right;
+    width: 100px;
+    height: 100px;
+    border: 1px solid grey;
+	margin: 4px;
+}
+
+.bookFooter span {
+    display: block;
+}
+
+.bookFooter {
+    padding: 5px;
+}
+
+.bkBtn{
+	margin-left: 8px;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: -1px;
+	
+}
+
+.deleteBtn{
+	background-color: red;	 
+}
+
+.deleteBtn, .editBtn{
+    margin-bottom: -2px;
+}
+
+.editBtn , .addBtn{
+	/*background-color: palegreen*/
+	
+}
+
+.noBookMsg{
+	font-size: 28px;
+    border: 1px dashed grey;
+    width: 100%;
+    text-align: center;
+    padding: 4%;
+    margin-top: 1%;
+}
+
+.bookDesc{
+	word-wrap : break-word;
+	
+}
+
+.bmodal-container{
+	width:100%; 
+	height:100%; 
+	z-index: 200; 
+    position: fixed; 
+	top: 0; 
+	left: 0; 
+	background: rgba(0, 0, 0, 0.6);
+	
+}
+
+.bmodal-content{
+	margin-top : 6%;
+	background: white;
+    width: 40%;
+    margin-left: 27%;
+    border-radius: 8px;
+	
+}
+
+.bmodal-title {
+	display: flex;
+	padding: 9px;
+	background-color: rgba(30, 87, 153, 0.78);
+    color: white;
+}
+
+.closeSym{
+	    margin-left: 60%;
+    margin-top: 7px;
+}
+
+.closeSym:hover{
+	cursor : pointer;
+	
+}
+
+.formBody{
+	max-height: 400px;
+	overflow: auto;
+	padding: 0px 0px 4% 4%;
+	word-wrap : break-word;
+}
+
+.bmodal-footer {
+    padding: 1%;
+}
+
+.form-input {
+    margin-top: 3%;
+}
+
+strong.title-text {
+    font-size: 23px;
+    padding: 5px;
+}
+
+.form-input label, .bookFooter label{
+	font-weight : bold;
+	
+}
+
+
+@media only screen and (min-width:700px) and (max-width: 1000px){
+	.bmodal-content{
+		width : 90%;		
+	}
+	.indBook{
+		max-width : 40%;
+		width : 40%;		
+	}	
+	.searchContainer { 
+		left: 62%;
+	}
+}
+
+@media only screen and (max-width: 700px){
+	.bmodal-content{
+		width : 90%;		
+	}
+	.indBook{
+		max-width : 90%;
+		width : 90%;		
+	}
+	.searchContainer { 
+		left: 42%;
+	}
+	
+}
+
+
+
